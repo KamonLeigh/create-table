@@ -9,10 +9,10 @@ html {
 body {
     padding: 0;
     margin: 0;
-    font-size: 10px;
 }
  
 :root{
+    --main--colour: #e5753d;
     --border--colour: #4d4f51;
     --sidebar--background:#cccccc;
     --button--background: #eeeeee;
@@ -35,6 +35,12 @@ h1 {
     font-size: 2.5rem;
     letter-spacing: 1.2px;
     color:var(--header-colour);
+    padding-bottom: 2px;
+}
+
+h1 span {
+    
+    border-bottom: 3px solid var(--main--colour);
 }
 
 .tabs {
@@ -42,6 +48,7 @@ h1 {
     width: 40rem;
     margin: 0 auto;
     border: 1px solid var(--border--colour);
+    height: 28rem;
 }
 
 .tab__sidebar{
@@ -65,7 +72,7 @@ h1 {
 .tab__button--active {
     font-weight: bold;
     background: var(--tab--button--active);
-    border-right: 2px solid #e5753d;
+    border-right: 2px solid var(--main--colour);
 }
 
 .tab__button:active{
